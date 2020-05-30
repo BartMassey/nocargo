@@ -1,4 +1,4 @@
-# libcrate: compiling Rust without Cargo
+# nocargo: compiling Rust without Cargo
 Bart Massey
 
 This is a trivial example of building both a library crate
