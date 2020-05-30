@@ -1,0 +1,13 @@
+[package]
+name = "nocargo"
+version = "0.1.0"
+authors = ["Bart Massey <bart.massey@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "client"
+path = "client.rs"
+
+[lib]
+name = "libcrate"
+path = "./libcrate.rs"
