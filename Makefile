@@ -1,5 +1,6 @@
-RUSTC = rustc
-RUSTFLAGS = --edition=2021
+RUSTC = rustc --edition=2021
+#RUSTFLAGS = -g
+RUSTFLAGS = -O -C codegen-units=1 -C lto=true
 
 client: liblibcrate.rlib client.rs
 	$(RUSTC) $(RUSTFLAGS) --extern=libcrate=liblibcrate.rlib \

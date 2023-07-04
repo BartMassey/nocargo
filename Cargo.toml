@@ -11,3 +11,8 @@ path = "client.rs"
 [lib]
 name = "libcrate"
 path = "libcrate.rs"
+
+[profile.release]
+opt-level = 2
+codegen-units = 1
+lto = true
