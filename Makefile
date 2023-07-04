@@ -1,5 +1,5 @@
 RUSTC = rustc
-RUSTFLAGS = --edition=2018
+RUSTFLAGS = --edition=2021
 
 client: liblibcrate.rlib client.rs
 	$(RUSTC) $(RUSTFLAGS) --extern=libcrate=liblibcrate.rlib \
